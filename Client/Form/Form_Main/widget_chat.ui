@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget_Chat</class>
+ <widget class="QWidget" name="Widget_Chat">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>521</width>
+    <height>421</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="Widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>521</width>
+     <height>421</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget#Widget{
+	border: 1px solid black;
+	border-radius: 20px;
+	background-color: rgba( 250, 250, 250, 200 );
+}</string>
+   </property>
+   <widget class="QScrollArea" name="Chat_sa">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>15</y>
+      <width>521</width>
+      <height>391</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>521</width>
+      <height>391</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>521</width>
+      <height>391</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QScrollArea{
+	border: none;
+	background-color: transparent;
+}</string>
+    </property>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+    <property name="horizontalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+    <property name="widgetResizable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="Chat_sawc">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>521</width>
+       <height>391</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">.QWidget{
+	border: none;
+	background-color: transparent;
+}
+
+QLabel{
+	font: 20pt;
+	border: 1px solid black;
+}
+
+QPushButton{
+	border: 1px solid black;
+	border-radius: 30px;
+}</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
